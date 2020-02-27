@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Health matches snapshot 1`] = `
+<div
+  className="progress-bar"
+>
+  <div
+    className="progress-inbar"
+    style={
+      Object {
+        "backgroundColor": "#f0ad4e",
+        "width": "undefined%",
+      }
+    }
+  />
+</div>
+`;

@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Machine React-Redux Component should render with given state from Redux store 1`] = `
+<div
+  className="detail"
+>
+  <div
+    className="left-side"
+  >
+    <h2>
+      Machine1
+    </h2>
+    <h3>
+      Update Device
+    </h3>
+    <h4>
+      Name:
+    </h4>
+    <input
+      onChange={[Function]}
+      placeholder="Machine1"
+      value=""
+    />
+    <button
+      onClick={[Function]}
+    >
+      SUBMIT
+    </button>
+  </div>
+  <div
+    className="right-side"
+  >
+    <div
+      className="center"
+    >
+      <h1>
+         
+        50
+         
+      </h1>
+      <div
+        className="progress-bar"
+      >
+        <div
+          className="progress-inbar"
+          style={
+            Object {
+              "backgroundColor": "#5cb85c",
+              "width": "50%",
+            }
+          }
+        />
+      </div>
+    </div>
+    <h3>
+      Stats
+    </h3>
+    <h4>
+      IP Adress: 
+      127.0.0.1
+    </h4>
+  </div>
+</div>
+`;

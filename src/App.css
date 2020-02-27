@@ -1,5 +1,7 @@
 body, html {
 	height: 100%;
+	width: 800px;
+	margin: auto;
 }
 
 #root {
@@ -7,7 +9,6 @@ body, html {
 }
 
 .App {
-	margin: 0 3em;
 	height: 100%;
 	background-color: white;
 }
@@ -36,4 +37,77 @@ body, html {
 
 .App-link {
 	color: #61dafb;
+}
+
+.mtable {
+	margin-top: 20px;
+	width: 100%;
+	/* border: 1px solid black; */
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	text-align: left;
+	padding: 3px 10px;
+}
+
+table>thead>tr {
+	background-color: #fff !important;
+}
+
+table tr:nth-child(even) {
+	background-color: #fff;
+}
+
+table tr:nth-child(odd) {
+	background-color: #eee;
+}
+
+.progress-bar {
+	border: 1px solid #444;
+	background-color: white;
+	height: 20px;
+	width: 100%;
+}
+
+.progress-inbar {
+	height: 100%;
+	background-color: #666;
+}
+
+.detail {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.left-side, .right-side {
+	width: 45%;
+}
+
+.left-side>input {
+	width: 90%;
+}
+
+.left-side>button {
+	width: 100px;
+	float: right;
+	margin-top: 5px;
+	margin-right:10%;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.center>h1 {
+	margin-bottom: 0;
 }
