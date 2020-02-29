@@ -6,18 +6,15 @@ import { Link } from 'react-router-dom'
 import Health from './Health'
 import * as machineAction from './store/machine'
 class Machines extends React.Component {
-    ws = new WebSocket('ws://localhost:1337');
 	
 	componentDidMount() {
-		this.ws.onopen = () => {
-			console.log('websocket client connected');
-		}
-	    this.ws.onmessage = evt => {
-			// const message = JSON.parse(evt.data)			
-			this.props.actions.getMachines();
-			// console.log(message);
-		}	
+		this.props.actions.getMachines();
 	}
+
+	// handleClick(id) {
+	// 	console.log(this.props.history);
+	// 	this.props.history.push('/machines/' + id);
+	// }
 
 	render() {
 		const { machines } = this.props;
@@ -34,8 +31,9 @@ class Machines extends React.Component {
 					<tbody>
 					{
 						machines.map((item, index) => (
-							<tr key={index}>
-								<td><Link to={ '/machines/'+item.id }>{item.name}</Link></td>
+							<tr key={index} >
+								{/* <td><div onClick={() => this.handleClick(item.id)}>{item.name}</div></td> */}
+								<td><Link to={'/machines/' + item.id}>{item.name}</Link></td>
 								<td>{item.ip_address}</td>
 								<td>
 									<Health value={item.health} />

@@ -51,7 +51,7 @@ class Machine extends React.Component {
     }
 }
 
-const mapStateToProps = (state) => ({machine: state.machine.machine});
+const mapStateToProps = (state) => {return {machine: state.machine.machine}};
 const mapDispatchToProps = (dispatch) => ({
     actions: bindActionCreators({...machineAction}, dispatch)
 })

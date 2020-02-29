@@ -69,7 +69,7 @@ export function putMachine(machineid, name) {
                     type:types.PUT_MACHINE,
                     status:types.SUCCESS,
                     error:null,
-                    result:Response
+                    result:response.data
                 })
             }
         ).catch(error => {
@@ -77,6 +77,18 @@ export function putMachine(machineid, name) {
                 type:types.PUT_MACHINE,
                 status:types.FAILED
             })
+        })
+    }
+}
+
+export function updateMachines(message) {
+    return dispatch=>{
+        dispatch({type:types.LOADING});
+        dispatch({
+            type:types.UPDATE_MACHINE,
+            status:types.SUCCESS,
+            error:null,
+            result:message
         })
     }
 }
